@@ -1,0 +1,10 @@
+<h1>Ajouter une note</h1>
+<form action="/notes/new" method="POST">
+    Note : 
+    <input type="text" name="note" value="<%= note %>"><br>
+    <input type="hidden" name="idNotes" value="<%= idNotes %>" >
+    <input type="submit" name="sauver" value="Sauver"><br>
+</form>
+<form action="./">
+    <input type="submit" value="Retourner à la page d'Accueil" />
+</form>

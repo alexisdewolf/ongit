@@ -1,0 +1,10 @@
+<a href="/notes/add">Ajouter un nom</a>
+<h1>Liste des notes</h1>
+<ul>
+    <% for (let i = 0 ;  i < notess.length ; i++) { %>
+    <li> <%= notess[i].note %> 
+        <a href="/notes/update/<%= i %>">Modifier</a> 
+        <a href="/notes/delete/<%= i %>">Effacer</a>
+    </li> 
+    <% } %>
+</ul>
